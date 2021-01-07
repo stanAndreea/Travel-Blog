@@ -1,0 +1,193 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+{% if destination == 'Solo'%}
+<!-- Solo trip section-->
+<section id="solo" class="section section-solo scrollspy">
+    <div class="container">
+      <div class="row">
+        <h4 class="center">
+        <span class="blue-text">Solo </span>Trip</h4>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <a href=https://theblondeabroad.com/top-10-experiences-for-solo-female-travelers/ target="_blank">
+                <img src="{% static 'images/slide_second/alone_1.jpg' %}" alt="alone1"/>
+              </a>
+            </div>
+            <div class="card-content">
+                Top 10 Experiences for Solo Female Travelers
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <a href=https://theblondeabroad.com/ten-mistakes-made-by-solo-female-travelers/ target="_blank">
+                <img src="{% static 'images/slide_second/alone_2.jpg' %}" alt="alone2"/>
+              </a>
+            </div>
+            <div class="card-content">
+                10 Mistakes Made By Solo Female Travelers
+            </div>     
+          </div>
+        </div>
+        <div class="col s12 m4 ">
+          <div class="card">
+            <div class="card-image ">
+              <a href=https://theblondeabroad.com/best-cities-travel-alone/ target="_blank">
+                <img src="{% static 'images/slide_second/alone_3.jpg' %}" alt="alone3"/>
+              </a>
+            </div>
+            <div class="card-content">
+                The Best Cities to Travel Alone around the world
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+{% if destination == 'Road' %}
+<!-- Road trip section -->
+<section id="road" class="section section-road scrollspy">
+    <div class="container">
+      <div class="row">
+        <h4 class="center">
+        <span class="blue-text">Road </span>Trip</h4>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <a href=https://theblondeabroad.com/ultimate-weekend-alaska-road-trip-itinerary/ target="_blank">
+                <img src="{% static 'images/slide_second/alaska.jpg' %}" alt="alaska"/>
+              </a>
+            </div>
+            <div class="card-content">
+                The Ultimate Weekend in Alaska Road Trip Itinerary
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <a href=https://theblondeabroad.com/ultimate-adventurous-oregon-road-trip-itinerary/ target="_blank">
+                <img src="{% static 'images/slide_second/oregon.jpg' %}" alt="oregon"/>
+              </a>
+            </div>
+            <div class="card-content">
+                The Ultimate Oregon Adventure Road Trip Itinerary
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4 ">
+          <div class="card">
+            <div class="card-image ">
+              <a href=https://theblondeabroad.com/ultimate-southern-usa-road-trip-itinerary/ target="_blank">
+                <img src="{% static 'images/slide_second/usa.jpg' %}" alt="usa"/>
+              </a>
+            </div>
+            <div class="card-content">
+                The Ultimate Southern USA Road Trip Guide
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+  <!-- Tropical trip section -->
+  {% if destination == 'Tropical' %}
+  <section id="tropical" class="section section-tropical scrollspy">
+    <div class="container">
+      <div class="row">
+        <h4 class="center">
+        <span class="blue-text">Tropical </span>Trip</h4>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <a href=https://theblondeabroad.com/which-hawaiian-island-should-you-travel-to/ target="_blank">
+                <img src="{% static 'images/slide_second/hawaii.jpg' %}" alt="hawaii"/>
+              </a>
+            </div>
+            <div class="card-content">
+                Which Hawaiian Island Should You Travel To?
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <a href=https://theblondeabroad.com/the-best-destinations-for-nature-lovers/ target="_blank">
+                <img src="{% static 'images/slide_second/nature_love.jpg' %}" alt="love"/>
+              </a>
+            </div>
+            <div class="card-content">
+                The Best Destinations for Nature Lovers
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4 ">
+          <div class="card">
+            <div class="card-image ">
+              <a href=https://theblondeabroad.com/the-best-time-to-travel-to-the-seychelles/ target="_blank">
+                <img src="{% static 'images/slide_second/seychelles.jpg' %}" alt="Seychelles"/>
+              </a>
+            </div>
+            <div class="card-content">
+                The Best Time to Travel to the Seychelles            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+<!-- Safari trip section -->
+  {% if destination == 'Safari' %}
+  <section id="safari" class="section section-safari scrollspy">
+    <div class="container">
+      <div class="row">
+        <h4 class="center">
+        <span class="blue-text">Safari </span>Trip</h4>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <a href=https://theblondeabroad.com/the-top-safari-destinations-in-africa/ target="_blank">
+                <img src="{% static 'images/slide_second/safari_1.jpg' %}" alt="safari"/>
+              </a>
+            </div>
+            <div class="card-content">
+                Top Safari Destinations in Africa that you can now visit          
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <a href=https://www.safaribookings.com/blog/everything-need-know-visiting-devils-pool-victoria-falls target="_blank">
+                <img src="{% static 'images/slide_second/safari_2.jpg' %}" alt="safari"/>
+              </a>
+            </div>
+            <div class="card-content">
+                Everything you need to know before visiting Devil’s Pool, Victoria Falls           
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4 ">
+          <div class="card">
+            <div class="card-image ">
+              <a href=https://www.safaribookings.com/blog/coronavirus-outbreak target="_blank">
+                <img src="{% static 'images/slide_second/safari_3.jpg' %}" alt="safari"/>
+              </a>
+            </div>
+            <div class="card-content">
+                The Impact of the Coronavirus Pandemic on the Safari Industry           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  {% endif %}
+  {% endblock %}

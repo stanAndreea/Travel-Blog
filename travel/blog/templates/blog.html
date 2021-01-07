@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section id="popular" class="section section-popular scrollspy">
+    <div class="container">
+      <div class="row">
+        <h4 class="center">
+        <span class="blue-text">Featured </span>From The Blog</h4>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <a href=https://www.momondo.ro/descopera/articol/luminile-nordului-top-locuri-admira-aurora-boreala target="_blank">
+                <img src="{% static 'images/slide_first/norvegia.jpg' %}" alt="Norvegia"/>
+              </a>
+              <span class="card-title">The lights of the North!</span>
+            </div>
+            <div class="card-content">
+              The world we live in is still beautiful and the time is too short to see them all.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <a href=https://www.momondo.ro/descopera/articol/cele-mai-bune-locuri-pentru-a-practica-yoga target="_blank">
+                <img src="{% static 'images/slide_first/namaste.jpg' %}" alt="namaste"/>
+              </a>
+              <span class="card-title">Namaste</span>
+            </div>
+            <div class="card-content">
+              From these 11 perfect places to practice yoga you will return very quiet.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4 ">
+          <div class="card">
+            <div class="card-image ">
+              <a href=https://www.momondo.ro/descopera/articol/bun-venit-in-jungla-cele-mai-bune-locuri-naturale-din-australasia-vacante-jungla target="_blank">
+                <img src="{% static 'images/slide_first/jungla.jpg' %}" alt="jungla"/>
+              </a>
+              <span class="card-title">Welcome to the jungle</span>
+            </div>
+            <div class="card-content">
+              Experience the wild nature by walking in the best jungles from Australasia.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock %}

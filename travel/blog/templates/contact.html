@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section id="contact" class="section section-contact scrollspy centerblock" style="margin-bottom: 10%;">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card-panel cardemail-custom center">
+            <i class="material-icons ">email</i>
+            <h4>BUSINESS INQUIRIES</h4>
+            <p>Wondering how to transform your product from a commodity into an experience? Not sure how to leverage the power of social media and connect with your target demographic? Whether you are a tourism board, travel company, property, or product, I can help market your brand with authenticity and creativity.</p>
+          </div>
+          <ul class="collection with-header">
+            <li class="collection-header">
+              <h5>Are you a reader with a personal question? </h5>
+              <p>Please refer to my FAQ. If you're a female traveler, be sure to join my Travel Tribe on Facebook to connect with other travelers!</p>
+            </li>
+          </ul>
+        </div>
+        <form method="post">
+          {%csrf_token %}
+        <div class="col s12 m6">
+          <div class="card-panel card-custom lighten-2">
+            <h5>
+              <span class="green-text">Interested </span><span class="purple-text"> in working together?</span>
+            </h5>
+            {{ form.non_field_errors }}
+          <div class="fieldWrapper">
+              <label for="{{ form.name.id_for_label }}">*Name:</label>
+              {{ form.name }}
+          </div>
+          <div class="fieldWrapper">
+            <label for="{{ form.email.id_for_label }}">*Email:</label>
+            {{ form.email }}
+          </div>
+          <div class="fieldWrapper">
+            <label for="{{ form.subject.id_for_label }}">*Subject:</label>
+            {{ form.subject }}
+          </div>
+          <div class="fieldWrapper">
+            <label for="{{ form.email.id_for_label }}">*Message:</label>
+            {{ form.message }}
+          </div>
+            <button type="submit" class="btn blue">Send message</button>
+            <br/>
+            <p class="red-text">
+               Fields marked with (*) are mandatory!
+            </p>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  {% endblock %}

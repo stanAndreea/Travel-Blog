@@ -1,0 +1,62 @@
+.navbar-custom {
+  color: #FFFFFF;
+  background-color: #01579b;
+}
+
+.section-search input {
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: #f4f4f4 3px solid !important;
+}
+
+.section-custom {
+  background-color: #0277bd;
+  color: #FFFFFF;
+}
+
+.section-follow .fa-4x {
+  margin: 5px 10px;
+}
+
+.footer-custom {
+  font-style: italic;
+  color: #FFFFFF;
+  background-color: #01579b;
+}
+
+.card-custom {
+  color: #000000;
+  background-color: #fffde7;
+}
+
+.cardemail-custom {
+  background-color: #1976d2;
+  color: #FFFFFF;
+  font-style: oblique;
+}
+
+.map {
+  height: 280px;
+  width: 100%;
+}
+
+html {height:100%;}
+body {height:100%; margin:0;}
+
+.header {
+  height: 10%;
+  /* position: fixed; */
+}
+
+.centerblock {
+  max-height: 70%;
+}
+
+.footer {
+  position: fixed;
+  max-height: 18%;
+  bottom: 0%;
+  margin-bottom: 0%;
+  width: 100%;
+}

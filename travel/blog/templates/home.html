@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Section: Slider -->
+<section class="section section-icons lighten-4 centerblock">
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="{% static 'images/slide_first/img1.jpg' %}" alt="img1" />
+        <div class="caption left-align">
+          <h2>Welcome to Andreea Travel Blog!</h2>
+        </div>
+      </li>
+      <li>
+        <img src="{% static 'images/slide_first/img2.jpg' %}" alt="img2" />
+        <div class="caption left-align">
+          <h2>Inspiration for travel</h2>
+        </div>
+      </li>
+      <li>
+        <img src="{% static 'images/slide_first/img3.jpg' %}" alt="img3" />
+        <div class="caption left-align">
+          <h2>Discover your future adventure</h2>
+        </div>
+      </li>
+	   <li>
+        <img src="{% static 'images/slide_first/img4.jpg' %}" alt="img4" />
+      </li>
+    </ul>
+  </div>
+</section>
+{% endblock %}

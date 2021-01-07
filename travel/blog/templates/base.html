@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover the world with Andreea</title>
+  <meta name="description" content="Travel Blog"/> 
+  <meta name="keywords" content="blog,travel"/>
+  <meta name="author" content="Andreea Stan"/>
+</head>
+
+<body id="home" class="scrollspy">
+  <div class="navbar-fixed header">
+    <nav class="navbar-custom">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo"><img src="{% static 'images/slide_first/flights.png' %}" alt="vacanta" /></a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li>
+              <a href="{% url 'discover' %}">Discover</a>
+            </li>
+            <li>
+              <a href="{% url 'blog' %}">Blog</a>
+            </li>
+            <li>
+              <a href="{% url 'gallery' %}">Photos</a>
+            </li>
+            <li>
+              <a href="{% url 'contact' %}">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="{% url 'home' %}">Home</a>
+    </li>
+    <li>
+      <a href="{% url 'discover' %}">Discover</a>
+    </li>
+    <li>
+      <a href="{% url 'blog' %}">Blog</a>
+    </li>
+    <li>
+      <a href="{% url 'gallery' %}">Photos</a>
+    </li>
+    <li>
+      <a href="{% url 'contact' %}">Contact</a>
+    </li>
+  </ul>
+  <div>
+      {% block content %}
+      {% endblock %}
+  </div>
+  <section class="footer section section-follow section-custom darken-2 white-text center">
+      <div class="row">
+        <div class="col s12">
+          <h6>Discover the world through my eyes</h6>
+          <a href=https://www.facebook.com class="white-text" target="_blank">
+          <i class="fab fa-facebook fa-4x"></i>
+        </a>
+          <a href=https://twitter.com class="white-text" target="_blank">
+          <i class="fab fa-twitter fa-4x"></i>
+        </a>
+          <a href=https://www.instagram.com class="white-text" target="_blank">
+          <i class="fab fa-instagram fa-4x"></i>
+        </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

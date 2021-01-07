@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section class="section section-icons lighten-4 center centerblock" style="position: relative;">
+  <div class="container">
+    <div class="row">
+      {% for destination in destinations %}
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <a href="{% url 'discover_detail' destination %}">
+                <img src="{% static 'images/slide_first/' %}{{destination}}_trip.jpg" alt="{{destination}}"/>
+              </a>
+              <span class="card-title">{{destination}} Trip</span>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
